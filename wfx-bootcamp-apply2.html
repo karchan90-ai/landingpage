@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>WChampFX Bootcamp — Apply</title>
+<meta name="description" content="Four days live with Dan Cheung. 5–9 November 2026. 100 seats. Application only.">
+<meta property="og:title" content="The Bootcamp — Dan Cheung">
+<meta property="og:description" content="Four days live. 100 seats. 5–9 November 2026.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Archivo:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0A0907; --ink2:#141009; --gold:#E8B437; --bone:#F4F0E8; --mute:#8C8372;
+  --line:rgba(232,180,55,.30); --hair:rgba(244,240,232,.10); --red:#E03A2F;
+  --f-display:'Instrument Serif',Georgia,serif;
+  --f-body:Archivo,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  --f-mono:'IBM Plex Mono',ui-monospace,Menlo,monospace;
+  color-scheme:dark;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--ink);color:var(--bone);font-family:var(--f-body);line-height:1.55;
+     -webkit-font-smoothing:antialiased;text-align:center}
+.wrap{max-width:860px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));
+      padding-right:max(16px,env(safe-area-inset-right,0px))}
+.mono{font-family:var(--f-mono);letter-spacing:.16em;text-transform:uppercase;font-size:11px}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+
+/* 1. disclosure strip */
+.disclose{background:#070604;border-bottom:1px solid var(--hair);padding-block:10px}
+.disclose p{font-size:11.5px;color:rgba(244,240,232,.45);line-height:1.5}
+.disclose a{color:rgba(244,240,232,.7)}
+
+/* 2-5. hero */
+.hero{padding-block:clamp(34px,5vw,56px) 0}
+.kicker{color:var(--gold);margin-bottom:18px}
+h1{font-family:var(--f-body);font-weight:800;letter-spacing:-.025em;
+   font-size:clamp(28px,5.4vw,48px);line-height:1.08;margin:0 auto 16px;max-width:17ch;
+   text-wrap:balance}
+h1 em{font-style:normal;color:var(--gold)}
+.sub{font-size:clamp(15px,2vw,18px);color:rgba(244,240,232,.68);max-width:52ch;
+     margin:0 auto 26px}
+
+/* video */
+.vwrap{position:relative;max-width:100%;margin:0 auto}
+.frame{position:relative;width:100%;aspect-ratio:16/9;max-width:100%;
+       border:1px solid var(--line);border-radius:4px;overflow:hidden;background:#000}
+.frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.taphere{font-family:var(--f-body);font-weight:800;font-size:clamp(14px,2.2vw,18px);
+         letter-spacing:.04em;margin-bottom:8px;color:var(--bone)}
+.arrow{display:block;margin:10px auto 0;width:clamp(90px,16vw,150px);height:auto}
+
+/* trust row */
+.trust{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;
+       gap:12px 26px;margin:26px 0 8px}
+.tb{display:flex;align-items:baseline;gap:8px}
+.tb b{font-family:var(--f-display);font-size:26px;color:var(--gold);line-height:1;
+      font-variant-numeric:tabular-nums}
+.tb span{font-family:var(--f-mono);font-size:10px;letter-spacing:.13em;
+         text-transform:uppercase;color:var(--mute)}
+.chev{display:block;margin:30px auto 0;width:26px;opacity:.75}
+
+/* 6. application */
+.apply{padding-block:clamp(30px,5vw,46px) clamp(40px,6vw,70px)}
+.applycard{background:#fff;border-radius:6px;overflow:hidden;min-height:620px;
+           box-shadow:0 20px 60px rgba(0,0,0,.45)}
+.applycard iframe{width:100%;height:620px;border:0;display:block}
+.fallback{font-size:13px;color:var(--mute);margin-top:14px}
+.fallback a{color:var(--gold)}
+.apphead{margin-bottom:20px}
+.apphead h2{font-family:var(--f-display);font-weight:400;font-size:clamp(26px,4.4vw,40px);
+            line-height:1.05;margin-bottom:10px}
+.apphead p{font-size:15px;color:rgba(244,240,232,.62);max-width:48ch;margin:0 auto}
+
+/* 7. legal */
+.legal{background:#070604;border-top:1px solid var(--hair);padding-block:44px 30px}
+.legal p{font-size:12px;color:rgba(244,240,232,.42);line-height:1.6;margin-bottom:14px;
+         max-width:88ch;margin-left:auto;margin-right:auto}
+.legal strong{color:rgba(244,240,232,.62)}
+.legal a{color:rgba(244,240,232,.6)}
+footer{background:#070604;padding-bottom:50px}
+.fnav{display:flex;flex-wrap:wrap;gap:22px;justify-content:center;
+      font-family:var(--f-mono);font-size:10.5px;letter-spacing:.14em;
+      text-transform:uppercase;color:var(--mute)}
+.fnav a{text-decoration:none}
+.fnav a:hover{color:var(--gold)}
+@media(prefers-reduced-motion:no-preference){
+  .chev{animation:bob 2.2s ease-in-out infinite}
+  @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(6px)}}
+}
+</style>
+</head>
+<body>
+
+<!-- ============================================================
+     EDIT ONLY THIS BLOCK
+     ============================================================ -->
+<script>
+const CONFIG = {
+  youtubeId:   "Ppm9XYEBDIw",
+  typeformId:  "kteHRTTw",
+  applyUrl:    "https://form.typeform.com/to/kteHRTTw",
+  dates:       "5–9 November 2026",
+  seats:       100,
+  termsUrl:    "REPLACE_TERMS_URL",
+  privacyUrl:  "REPLACE_PRIVACY_URL",
+  returnsUrl:  "REPLACE_RETURNS_URL",
+  supportMail: "REPLACE_SUPPORT_EMAIL"
+};
+</script>
+
+<div class="disclose"><div class="wrap">
+  <p><strong>Important:</strong> the results described on this page are Dan Cheung's own and
+     do not represent typical results. <a href="#legal">See full disclosure</a>.</p>
+</div></div>
+
+<header class="hero"><div class="wrap">
+  <p class="mono kicker" id="kicker"></p>
+
+  <h1>Four days inside the way a funded trader actually works — <em>not another course you
+      never finish</em></h1>
+
+  <p class="sub">Dan Cheung has traded for twelve years and documented every prop firm
+     challenge in public, pass and fail. He's teaching live for the first time in two years.</p>
+
+  <div class="vwrap">
+    <p class="taphere">TAP HERE ↓</p>
+    <div class="frame">
+      <iframe id="vsl" title="Dan Cheung — the bootcamp" allowfullscreen
+        allow="accelerometer; clipboard-write; encrypted-media; picture-in-picture"></iframe>
+    </div>
+    <svg class="arrow" viewBox="0 0 160 70" fill="none" aria-hidden="true">
+      <path d="M152 58C120 64 70 60 36 40 22 32 14 22 10 12"
+            stroke="#E03A2F" stroke-width="9" stroke-linecap="round"/>
+      <path d="M4 4 L14 30 L34 16 Z" fill="#E03A2F"/>
+    </svg>
+  </div>
+
+  <div class="trust">
+    <span class="tb"><b>12</b><span>Years trading</span></span>
+    <span class="tb"><b>$2.5m</b><span>Funded in a month</span></span>
+    <span class="tb"><b>$180k</b><span>FTMO, verified</span></span>
+    <span class="tb"><b id="tseats"></b><span>Seats only</span></span>
+  </div>
+
+  <svg class="chev" viewBox="0 0 24 14" fill="none" aria-hidden="true">
+    <path d="M2 2 L12 11 L22 2" stroke="#E8B437" stroke-width="2.4"
+          stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+</div></header>
+
+<section class="apply"><div class="wrap">
+  <div class="apphead">
+    <h2>Apply for a seat</h2>
+    <p>Applications are read by Dan, his brother, or one of the team — there are three of
+       us, so give it a little time. <span id="seatline"></span></p>
+  </div>
+  <div class="applycard">
+    <iframe id="tf" title="Bootcamp application"></iframe>
+  </div>
+  <p class="fallback">Application not loading?
+     <a id="tflink" href="#" target="_blank" rel="noopener">Click here</a></p>
+</div></section>
+
+<div class="legal" id="legal"><div class="wrap">
+  <p><strong>Risk warning.</strong> Trading foreign exchange, CFDs and futures carries a high
+     level of risk and can result in the loss of all of your capital. It is not suitable for
+     everyone. You should not trade with money you cannot afford to lose.</p>
+
+  <p><strong>Results disclosure.</strong> The figures on this page describe Dan Cheung's own
+     past trading and prop firm payout results, evidenced by the certificates and dashboards
+     published on his public channels. <strong>They are illustrative only. They are not
+     typical, and they are not a prediction, promise or guarantee of what you or anyone else
+     will achieve.</strong> Past performance is not a reliable indicator of future results.
+     The majority of people who attempt prop firm evaluations do not pass them, and the
+     majority of retail traders lose money.</p>
+
+  <p><strong>No advice.</strong> Nothing on this page or in the bootcamp is financial,
+     investment, legal or tax advice, and no personal recommendation is being made. This is
+     educational content. We do not manage money, hold client funds, place trades on your
+     behalf, or guarantee funding, payouts or acceptance by any prop firm. Any decision you
+     take is your own, and you should seek independent advice where appropriate.</p>
+
+  <p><strong>Not an income opportunity.</strong> This is a training programme. It is not a
+     business opportunity, franchise, or multi-level marketing scheme, and no earnings,
+     income or results are represented or implied.</p>
+
+  <p><strong>Independence.</strong> WChampFX is not affiliated with, endorsed by or
+     sponsored by any prop firm, broker, exchange or platform named in the training or on
+     this page. All trademarks belong to their respective owners. Where we link to a prop
+     firm or broker we may receive a commission, which never affects what we teach or
+     recommend.</p>
+
+  <p><strong>Applications.</strong> Submitting an application does not reserve or guarantee a
+     seat. Seats are limited and confirmed only on acceptance and payment.</p>
+
+  <p id="legalfoot"></p>
+</div></div>
+
+<footer><div class="wrap">
+  <div class="fnav">
+    <a id="lterms" href="#">Terms</a>
+    <a id="lprivacy" href="#">Privacy</a>
+    <a id="lreturns" href="#">Returns</a>
+    <a id="lcontact" href="#">Contact</a>
+  </div>
+</div></footer>
+
+<script>
+(function(){
+  var C = CONFIG, $ = function(id){ return document.getElementById(id); };
+  $('vsl').src = "https://www.youtube.com/embed/" + C.youtubeId + "?rel=0&modestbranding=1";
+  $('tf').src  = "https://form.typeform.com/to/" + C.typeformId + "?typeform-medium=embed";
+  $('tflink').href = C.applyUrl;
+  $('kicker').textContent = "The bootcamp · " + C.dates + " · live";
+  $('tseats').textContent = C.seats;
+  $('seatline').textContent = C.seats + " seats for " + C.dates + ".";
+  $('legalfoot').textContent =
+    "WChampFX. Copyright " + new Date().getFullYear() + ". All rights reserved.";
+  var map = {lterms:C.termsUrl, lprivacy:C.privacyUrl, lreturns:C.returnsUrl};
+  Object.keys(map).forEach(function(k){
+    if (map[k].indexOf('REPLACE') !== 0) $(k).href = map[k];
+  });
+  if (C.supportMail.indexOf('REPLACE') !== 0) $('lcontact').href = "mailto:" + C.supportMail;
+})();
+</script>
+</body>
+</html>
